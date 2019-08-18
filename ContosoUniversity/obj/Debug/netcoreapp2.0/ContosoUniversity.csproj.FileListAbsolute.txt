@@ -15,7 +15,6 @@ C:\Users\Harjinder\source\repos\ContosoUniversity-master\ContosoUniversity-maste
 C:\Users\Harjinder\source\repos\ContosoUniversity-master\ContosoUniversity-master\ContosoUniversity\bin\Debug\netcoreapp2.0\ContosoUniversity.runtimeconfig.dev.json
 C:\Users\Harjinder\source\repos\ContosoUniversity-master\ContosoUniversity-master\ContosoUniversity\bin\Debug\netcoreapp2.0\ContosoUniversity.dll
 C:\Users\Harjinder\source\repos\ContosoUniversity-master\ContosoUniversity-master\ContosoUniversity\bin\Debug\netcoreapp2.0\ContosoUniversity.pdb
-C:\Users\Harjinder\source\repos\ContosoUniversity-master\ContosoUniversity-master\ContosoUniversity\obj\Debug\netcoreapp2.0\ContosoUniversity.csprojAssemblyReference.cache
 C:\Users\Harjinder\source\repos\ContosoUniversity-master\ContosoUniversity-master\ContosoUniversity\obj\Debug\netcoreapp2.0\ContosoUniversity.csproj.CoreCompileInputs.cache
 C:\Users\Harjinder\source\repos\ContosoUniversity-master\ContosoUniversity-master\ContosoUniversity\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
 C:\Users\Harjinder\source\repos\ContosoUniversity-master\ContosoUniversity-master\ContosoUniversity\obj\Debug\netcoreapp2.0\ContosoUniversity.AssemblyInfoInputs.cache

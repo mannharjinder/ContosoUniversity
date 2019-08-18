@@ -9,9 +9,9 @@ namespace ContosoUniversity.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropTable(name: "Enrollment");
-            migrationBuilder.DropTable(name: "Course");
-            migrationBuilder.DropTable(name: "Student");
+            //migrationBuilder.DropTable(name: "Enrollment");
+            //migrationBuilder.DropTable(name: "Course");
+            //migrationBuilder.DropTable(name: "Student");
 
             migrationBuilder.CreateTable(
                 name: "Course",
