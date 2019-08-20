@@ -20,6 +20,8 @@
 
   <ItemGroup>
     <Folder Include="Properties\PublishProfiles\" />
+    <Folder Include="Views\Courses\" />
+    <Folder Include="Views\Instructors\" />
   </ItemGroup>
 
 </Project>
