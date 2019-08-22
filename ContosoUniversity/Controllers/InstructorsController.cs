@@ -20,12 +20,7 @@ namespace ContosoUniversity.Controllers
             _context = context;
         }
 
-        // GET: Instructors
-        //public async Task<IActionResult> Index()
-        //{
-        //    return View(await _context.Instructors.ToListAsync());
-        //}
-
+      //added in week 5
         public async Task<IActionResult> Index(int? id, int? courseID)
         {
             var viewModel = new InstructorIndexData();
