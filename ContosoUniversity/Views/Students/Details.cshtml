@@ -28,8 +28,7 @@
         <dd>
             @Html.DisplayFor(model => model.EnrollmentDate)
         </dd>
-
-        //added in week 2
+        @*Added in Week2*@
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Enrollments)
         </dt>
@@ -39,7 +38,7 @@
                     <th>Course Title</th>
                     <th>Grade</th>
                 </tr>
-                @foreach(var item in Model.Enrollments)
+                @foreach (var item in Model.Enrollments)
                 {
                     <tr>
                         <td>
@@ -51,7 +50,6 @@
                     </tr>
                 }
             </table>
-
         </dd>
     </dl>
 </div>

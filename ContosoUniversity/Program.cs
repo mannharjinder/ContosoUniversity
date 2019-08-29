@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using ContosoUniversity.Data;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.DependencyInjection;
+using ContosoUniversity.Data;
 
 namespace ContosoUniversity
 {
@@ -17,7 +17,7 @@ namespace ContosoUniversity
         public static void Main(string[] args)
         {
             //var host = CreateWebHostBuilder(args).Build();
-            var host = BuildWebHost(args);
+            var host = BuildWebHost(args); //Added to replace the above line in Week 1
 
             using (var scope = host.Services.CreateScope())
             {
@@ -34,8 +34,6 @@ namespace ContosoUniversity
                 }
             }
             host.Run();
-
-            
         }
 
         public static IWebHost BuildWebHost(string[] args) =>

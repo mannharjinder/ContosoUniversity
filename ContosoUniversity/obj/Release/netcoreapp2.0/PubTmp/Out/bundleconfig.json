@@ -7,6 +7,16 @@
     "inputFiles": [
       "wwwroot/css/site.css"
     ]
+
+    // Added in Week 3, didn't work
+    //,
+    //"minify": {
+    //  "enabled": true,
+    //  "renameLocals": true
+    //},
+
+    // Added in Week 3
+   // "includeInProject": true
   },
   {
     "outputFileName": "wwwroot/js/site.min.js",

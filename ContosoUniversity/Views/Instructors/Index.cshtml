@@ -12,7 +12,19 @@
 </p>
 <table class="table">
     <thead>
-       
+        @*<tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.LastName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FirstMidName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.HireDate)
+                </th>
+            <th></th>
+        </tr>*@
+
         <tr>
             <th>Last Name</th>
             <th>First Name</th>
@@ -50,7 +62,7 @@
                     foreach (var course in item.CourseAssignments)
                     {
                         @course.Course.CourseID @: @course.Course.Title <br />
-                    }
+}
                 }
             </td>
             <td>

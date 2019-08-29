@@ -11,8 +11,6 @@ using Microsoft.Extensions.DependencyInjection;
 using ContosoUniversity.Data;
 using ContosoUniversity.Models;
 using ContosoUniversity.Services;
-using Microsoft.AspNetCore.Http;
-
 
 namespace ContosoUniversity
 {
@@ -27,16 +25,13 @@ namespace ContosoUniversity
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
-
         {
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            //Added in week 1 exercise 16/07/2019
-            services.AddDbContext<SchoolContext>(options => options.UseSqlServer
-            (Configuration.GetConnectionString("DefaultConnection")));
-
-
+            //Added in Week 1 Exercise, 16/7/2019
+            services.AddDbContext<SchoolContext>(options =>
+options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()

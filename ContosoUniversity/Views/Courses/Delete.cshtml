@@ -11,6 +11,14 @@
     <h4>Course</h4>
     <hr />
     <dl class="dl-horizontal">
+        @*Added in Week 6 Start*@
+        <dt>
+            @Html.DisplayNameFor(model => model.CourseID)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CourseID)
+        </dd>
+        @*Added in Week 6 End*@
         <dt>
             @Html.DisplayNameFor(model => model.Title)
         </dt>
@@ -27,7 +35,7 @@
             @Html.DisplayNameFor(model => model.Department)
         </dt>
         <dd>
-            @Html.DisplayFor(model => model.Department.DepartmentID)
+            @Html.DisplayFor(model => model.Department.Name)@*Modified in Week 6*@
         </dd>
     </dl>
     
