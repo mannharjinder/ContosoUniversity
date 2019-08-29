@@ -20,6 +20,8 @@ namespace ContosoUniversity.Models
         //public ICollection<Enrollment> Enrollments { get; set; }
 
         //The following replaced the above in Week 4
+
+        public string PathOfFile { get; set; }
         public int ID { get; set; }
         [Required]
         [StringLength(50)]

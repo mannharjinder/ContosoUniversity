@@ -25,9 +25,13 @@
 
 <table class="table">
     <thead>
-        <tr>
-            @*Replaced in Week 3*@
-                @*<th>
+    <tr>
+        <th>
+            Image
+        </th>
+
+        @*Replaced in Week 3*@
+        @*<th>
                     @Html.DisplayNameFor(model => model.LastName)
                 </th>
                 <th>
@@ -37,11 +41,11 @@
                     @Html.DisplayNameFor(model => model.EnrollmentDate)
                 </th>
             <th></th>*@
-            @*Introduced in Week 3*@
-            <th>
-           @*<a asp-action="Index" asp-route-sortOrder="@ViewData["NameSortParm"]">@Html.DisplayNameFor(model => model.LastName)</a>*@
-                <a asp-action="Index" asp-route-sortOrder="@ViewData["NameSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]">Last Name</a>
-            </th>
+        @*Introduced in Week 3*@
+        <th>
+            @*<a asp-action="Index" asp-route-sortOrder="@ViewData["NameSortParm"]">@Html.DisplayNameFor(model => model.LastName)</a>*@
+            <a asp-action="Index" asp-route-sortOrder="@ViewData["NameSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]">Last Name</a>
+        </th>
         <th>
             @*@Html.DisplayNameFor(model => model.FirstMidName)*@
             First Name
@@ -51,11 +55,18 @@
             <a asp-action="Index" asp-route-sortOrder="@ViewData["DateSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]">Enrollment Date</a>
         </th>
         <th></th>
-        </tr>
+    </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
-        <tr>
+    var imgUrl = @Href("~" + item.PathOfFile);
+    var errImg = @Href("~/images/Unitec.jpg");
+    <tr>
+    <td>
+        <img style="width: 250px; height: auto;" src="@imgUrl" alt="Student Image" onerror="this.onerror = null; this.src = '@errImg'">
+    </td>
+
+        
             <td>
                 @Html.DisplayFor(modelItem => item.LastName)
             </td>
